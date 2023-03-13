@@ -25,13 +25,13 @@
       </a> -->
       <h1><img src="assets/img/image 1 (1).png" alt="">Vendr</h1> 
       <!-- NOTE add btn -->
-      <button class="btn btn-lg btn-outline-light" onclick="app.moneyController.addMoney()">Add $0.25</button>
+      <button class="btn btn-lg btn-outline-light" onclick="app.moniesController.addMoney()">Add $0.25</button>
     </nav>
   </header>
   <main class="pb-5">
     <div class="container-fluid">
       <section id="snack-name" class="row justify-content-evenly  text-center pt-4">
-        <!-- <h2 class="col-4 bg-success p-2 rounded text-light">Snack Name</h2> -->
+        <!-- <h2 class="col-4 bg-success p-2 rounded text-light"><i class="mdi mdi-sprout"></i> Snack Name</h2> -->
       </section>
       <section id="snacks" class="row p-5 justify-content-evenly">
         <!-- NOTE my card -->
@@ -48,8 +48,8 @@
         </div> -->
       </section>
       <section class="row justify-content-center">
-        <div class="col-4 bg-dark text-light text-center border-1 rounded py-3 elevation-3">
-          <h2>TOTAL MONEY: <span>$0</span></h2>
+        <div  class="col-4 bg-dark text-light text-center border-1 rounded py-3 elevation-3">
+          <h2>TOTAL MONEY: <span id="total">$0</span></h2>
         </div>
       </section>
     </div>

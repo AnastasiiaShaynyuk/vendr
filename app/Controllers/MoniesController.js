@@ -1,18 +1,23 @@
-// import { appState } from "../AppState.js";
-// import { moniesService } from "../Services/MoniesService.js";
+import { appState } from "../AppState.js";
+import { moniesService } from "../Services/MoniesService.js";
+import { setHTML, setText } from "../Utils/Writer.js";
 
 
-// function _drawSnackName(){
+function _drawTotal(){
+  console.log ('drawing money')
+  let template = ''
+  setHTML('total', '$' + template)
+}
 
-// }
+export class MoniesController {
+  constructor() {
+    // console.log('hello from money')
+    appState.on('money', _drawTotal)
+  }
 
-// export class MoniesController {
-//   constructor() {
-//     console.log('hello from money')
-//   }
-
-//   addMoney() {
-//     console.log('adding money')
-//     moniesService.addMoney()
-//   }
-// }
+  addMoney() {
+    console.log('adding money')
+    moniesService.addMoney()
+    _drawTotal()
+  }
+}

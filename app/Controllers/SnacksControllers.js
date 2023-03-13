@@ -6,18 +6,18 @@ function _drawSnackName() {
   console.log('snackName')
 }
 
-// function _drawSnack() {
-//   console.log('drawing snack')
-//   let snacks = appState.snacks
-//   let template = ''
-//   snacks.forEach(s => template += s.CardTemple)
-//   setHTML('snacks', template)
-// }
+function _drawSnack() {
+  console.log('drawing snack')
+  let snacks = appState.snacks
+  let template = ''
+  snacks.forEach(s => template += s.CardTemple)
+  setHTML('snacks', template)
+}
 
 
 export class SnacksController {
   constructor() {
-    // console.log('hello');
-    // _drawSnack()
+    console.log('hello');
+    _drawSnack()
   }
 }
